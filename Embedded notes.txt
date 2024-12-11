@@ -1,0 +1,80 @@
+Embedded elements
+HTML5 supports the following types of embedded elements:
+1.Image Element:
+<img src="Summit.png" alt="image unavailable"/>
+<figure>
+    <img src="tropicalSea.jpg"
+         alt="An image of tropical sea"
+         width="400"
+         height="341">
+  
+    <figcaption>A colorful tropical sea view</figcaption>
+</figure>
+
+2.Audio Element
+<audio src="audio.mp3"  controls="controls"></audio>
+Some of the attributes which are supported by the audio element are as follows:
+
+Attribute	Value	                                   Description
+loop	        Boolean- any value sets it to true	   Loops audio indefinitely
+autoplay	Boolean- any value sets it to true	   Plays audio indefinitely
+preload	        none-preloading
+                metadata- audio metadata is downloaded
+                auto-entire audio file is downloaded       Specifies whether audio should be preloaded or not
+muted	        Boolean- any value sets it to true	   Mutes audio
+
+3. Video Element:
+<video src ="myVideo.mp4" controls="controls"></video>
+Some of the attributes which are supported by video element are as follows:
+
+Attribute	Value	                                     Description
+loop	        Boolean- any value sets it to true	    Loops audio indefinitely
+autoplay	Boolean- any value sets it to true	    Plays audio indefinitely
+preload	        none-preloading
+                metadata- video metadata is downloaded
+                auto- entire audio file is downloaded	    Specifies whether the video should be preloaded or not
+height	        pixel                                       Specifies the height of the video player
+width	        pixel                                       Specifies the width of the video player
+poster	        URL of an image file	                    Displays image until the first frame of the video is downloaded
+muted	        Boolean- any value sets it to true	     Mutes audio
+Source Element:
+<audio>
+   <source src="myaudio.ogg" type="audio/ogg">
+   <source src="myaudio.mp3" type="audio/mp3">
+</audio>
+
+Problem Statement:
+
+Create a file embedded_demo.html in your Visual Studio Code workspace as below.
+
+Activities:
+
+Remove the 'controls' attribute and observe the output.
+
+Include <source> element in <audio> and <video> elements and observe the output.
+
+Observe the alternative text appearing if it is failed to load the file.
+
+Note: You can execute this tryout in your Visual Studio code IDE or any other editors.
+
+You can download the needed artifacts from here.
+
+ embedded_demo.html
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <h4>Embedding image, audio and video</h4>
+        <!-- embedding image into the web page -->
+        Sea View Image: <br/>
+        <img src="tropicalSea.jpg" alt="Tropical Sea Image" width="350" height="250"> <br> <br>
+        <!-- embedding audio into the web page -->
+        Listen to some music: <br/>
+        <audio src="music.mp3" controls ="controls"></audio> <br/> <br>
+        Sea View Video: <br/>
+        <!-- embedding video into the web page -->
+        <video src="seaView.mp4" controls="controls" width="350" height="250"></video>
+    </body>
+</html>
+
+ 
